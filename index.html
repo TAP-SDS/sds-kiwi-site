@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Summit Diesel Services — Pukekohe</title>
+  <meta name="description" content="Summit Diesel Services — diesel specialists based at 62 Adams Drive, Pukekohe. Phone 09 239 0594.">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Summit Diesel Services — Pukekohe">
+  <meta property="og:description" content="Diesel specialists based at 62 Adams Drive, Pukekohe. Phone 09 239 0594.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sds.kiwi/">
+  <meta property="og:image" content="https://sds.kiwi/sds-logo.png">
+
+  <link rel="icon" type="image/png" href="sds-logo.png">
+
+  <style>
+    :root {
+      --sds-red: #E31B23;
+      --sds-black: #000000;
+      --sds-white: #FFFFFF;
+      --sds-grey: #b8b8b8;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: radial-gradient(ellipse at center, #1a0000 0%, #000000 70%);
+      color: var(--sds-white);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      width: 100%;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 720px;
+      height: auto;
+      margin-bottom: 2.5rem;
+      filter: drop-shadow(0 4px 20px rgba(227, 27, 35, 0.25));
+    }
+
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: var(--sds-red);
+      margin: 1.5rem auto;
+      border: none;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .contact-line {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+    }
+
+    .contact-line .icon {
+      color: var(--sds-red);
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    .contact-line a {
+      color: var(--sds-white);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .contact-line a:hover,
+    .contact-line a:focus {
+      color: var(--sds-red);
+    }
+
+    .address {
+      font-size: 1.05rem;
+      line-height: 1.5;
+      color: var(--sds-grey);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .hours {
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--sds-grey);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    footer {
+      width: 100%;
+      max-width: 900px;
+      text-align: center;
+      padding-top: 2rem;
+      font-size: 0.8rem;
+      color: #555;
+      letter-spacing: 0.05em;
+    }
+
+    footer .tagline {
+      color: var(--sds-grey);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.85rem;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      body { padding: 1.5rem 1rem; }
+      .logo { margin-bottom: 1.5rem; }
+      .contact-line { font-size: 1rem; }
+      .address { font-size: 0.95rem; }
+    }
+
+    /* Reduce motion for accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      .logo { filter: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="sds-logo.png" alt="Summit Diesel Services" class="logo">
+
+    <hr class="divider" aria-hidden="true">
+
+    <div class="contact">
+      <div class="contact-line">
+        <span class="icon" aria-hidden="true">📞</span>
+        <a href="tel:+6492390594">09 239 0594</a>
+      </div>
+
+      <div class="contact-line">
+        <span class="icon" aria-hidden="true">✉️</span>
+        <a href="mailto:info@sds.kiwi">info@sds.kiwi</a>
+      </div>
+
+      <address class="address" style="font-style: normal;">
+        62 Adams Drive<br>
+        Pukekohe 2120<br>
+        New Zealand
+      </address>
+
+      <p class="hours">Mon – Fri &nbsp;|&nbsp; 7:30 AM – 5:00 PM</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="tagline">Diesel Specialists</div>
+    <div>© <span id="year"></span> Summit Diesel Services · BMCK Capital Investments Ltd</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
