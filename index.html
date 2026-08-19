@@ -152,6 +152,15 @@
     /* Reduce motion for accessibility */
     @media (prefers-reduced-motion: reduce) {
       .logo { filter: none; }
+      .partner-link:hover, .partner-link:focus { transform: none; }
+    }
+
+    .partner-link {
+      transition: transform 0.2s ease;
+    }
+    .partner-link:hover,
+    .partner-link:focus {
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -179,6 +188,24 @@
       </address>
 
       <p class="hours">Mon – Fri &nbsp;|&nbsp; 7:30 AM – 5:00 PM</p>
+
+      <div style="margin-top: 3.5rem; border-top: 1px solid #222; padding-top: 2rem; width: 100%; max-width: 600px;">
+        <h3 style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--sds-red); margin-bottom: 1rem; margin-top: 0;">Authorized Distributorships</h3>
+        <p style="font-size: 0.95rem; color: var(--sds-grey); line-height: 1.6; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+          Summit Diesel Services and Total Ag Parts are proud authorized distributors of <strong>Shell Lubricants</strong> and <strong>BOC Gases</strong>, servicing the wider Franklin District. All products can be purchased directly through our team.
+        </p>
+        
+        <div style="display: flex; gap: 2.5rem; justify-content: center; align-items: center; flex-wrap: wrap;">
+          <!-- Shell -->
+          <a href="https://www.tdxltd.co.nz/brands/shell" target="_blank" rel="noopener" class="partner-link" style="display: block;">
+            <img src="https://cdn.shopify.com/s/files/1/0660/4767/2507/files/shell-logo.png?v=1787108714" alt="Shell Lubricants Distributor" style="height: 60px; width: auto; filter: drop-shadow(0 2px 8px rgba(255,255,255,0.05));">
+          </a>
+          <!-- BOC -->
+          <a href="https://www.boc.co.nz" target="_blank" rel="noopener" class="partner-link" style="display: block;">
+            <img src="https://cdn.shopify.com/s/files/1/0660/4767/2507/files/boc-logo.png?v=1787108698" alt="BOC Gases Distributor" style="height: 50px; width: auto; filter: drop-shadow(0 2px 8px rgba(255,255,255,0.05));">
+          </a>
+        </div>
+      </div>
     </div>
   </main>
 
